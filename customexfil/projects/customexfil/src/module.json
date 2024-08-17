@@ -1,0 +1,10 @@
+{
+    "name": "customexfil",
+    "title": "customexfil",
+    "description": "Allows you to automatically exilftrate recon data with Discord webhooks and other serves (other services coming soon)",
+    "version": "1.0",
+    "author": "SupremeERG",
+    "firmware_required": "2.0.0",
+    "devices": ["wifipineapplemk7"]
+}
+
