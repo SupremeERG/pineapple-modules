@@ -1,7 +1,34 @@
+
 <mat-card>
     <mat-card-title>Welcome to customexfil</mat-card-title>
-    <mat-card-content>
-        This is the example module.
+    <mat-card-content id="exfiltration_option_card">
+
+        <form>
+            <mat-form-field>
+                <label for="exfiltration_method">Exfiltration method:</label>
+                <mat-select #exfilmethod (onChange)="onExfilMethodSelect();" [(ngModel)]="selectedExfilMethod" name="exfiltration_method" id="exfiltration_method">
+                    <mat-option selected="selected" value="discord">Discord Webhook</mat-option>
+                </mat-select>
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="exfiltration_interval">Exfiltration interval:</label>
+                <mat-select (onChange)="onExfilIntervalSelect();" name="exfiltration_interval" [(ngModel)]="selectedExfilInterval">
+                    <mat-option value="5min">5 Minutes</mat-option>
+                    <mat-option value="15min">15 Minutes</mat-option>
+                    <mat-option value="30min">30 Minutes</mat-option>
+                    <mat-option selected value="1hr">1 Hour</mat-option>
+                    <mat-option value="12hr">12 Hours</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </form>
+
+
 
         <button mat-flat-button color="accent" (click)="doAPIAction();">
             Request to API
@@ -10,4 +37,5 @@
         <span id="targetspan">The version is: </span>
         <br />
     </mat-card-content>
+
 </mat-card>

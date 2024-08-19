@@ -7,10 +7,22 @@ import { ApiService } from '../services/api.service';
     styleUrls: ['./customexfil.component.css']
 })
 export class customexfilComponent implements OnInit {
-    constructor(private API: ApiService) { }
-
+    constructor(private API: ApiService) {
+    }
+    
     apiResponse = 'Press the button above to get the version';
+    selectedExfilMethod = "discord";
+    selectedExfilInterval = "1hr";
 
+    onExfilMethodSelect(): void {
+        this.selectedExfilMethod = "test";
+        console.log("changed val", this.selectedExfilMethod)
+    }
+
+    onExfilIntervalSelect(): void {
+        this.selectedExfilInterval = "test";
+        console.log("changed val", this.selectedExfilInterval)
+    }
 
     doAPIAction(): void {
         console.log("testtesttest")
@@ -25,5 +37,9 @@ export class customexfilComponent implements OnInit {
     }
 
     ngOnInit() {
+        
+        if (this.selectedExfilInterval == "30min") {
+            console.log("30 minutes")
+        }
     }
 }
