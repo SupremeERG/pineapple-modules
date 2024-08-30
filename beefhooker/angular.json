@@ -3,38 +3,38 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "customexfil": {
+        "beefhooker": {
             "projectType": "library",
-            "root": "projects/customexfil",
-            "sourceRoot": "projects/customexfil/src",
+            "root": "projects/beefhooker",
+            "sourceRoot": "projects/beefhooker/src",
             "prefix": "lib",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-ng-packagr:build",
                     "options": {
-                        "tsConfig": "projects/customexfil/tsconfig.lib.json",
-                        "project": "projects/customexfil/ng-package.json"
+                        "tsConfig": "projects/beefhooker/tsconfig.lib.json",
+                        "project": "projects/beefhooker/ng-package.json"
                     },
                     "configurations": {
                         "production": {
-                            "tsConfig": "projects/customexfil/tsconfig.lib.prod.json"
+                            "tsConfig": "projects/beefhooker/tsconfig.lib.prod.json"
                         }
                     }
                 },
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "main": "projects/customexfil/src/test.ts",
-                        "tsConfig": "projects/customexfil/tsconfig.spec.json",
-                        "karmaConfig": "projects/customexfil/karma.conf.js"
+                        "main": "projects/beefhooker/src/test.ts",
+                        "tsConfig": "projects/beefhooker/tsconfig.spec.json",
+                        "karmaConfig": "projects/beefhooker/karma.conf.js"
                     }
                 },
                 "lint": {
                     "builder": "@angular-devkit/build-angular:tslint",
                     "options": {
                         "tsConfig": [
-                            "projects/customexfil/tsconfig.lib.json",
-                            "projects/customexfil/tsconfig.spec.json"
+                            "projects/beefhooker/tsconfig.lib.json",
+                            "projects/beefhooker/tsconfig.spec.json"
                         ],
                         "exclude": [
                             "**/node_modules/**"
@@ -43,5 +43,5 @@
                 }
             }
         }},
-    "defaultProject": "customexfil"
+    "defaultProject": "beefhooker"
 }

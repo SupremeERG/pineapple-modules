@@ -1,0 +1,10 @@
+{
+    "name": "beefhooker",
+    "title": "beefhooker",
+    "description": "Hooks targets to BeEF",
+    "version": "1.0",
+    "author": "SupremeERG",
+    "firmware_required": "2.0.0",
+    "devices": ["wifipineapplemk7"]
+}
+

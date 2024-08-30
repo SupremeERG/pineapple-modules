@@ -7,3 +7,5 @@ replacer.sh
 create.sh
 *.tar.gz
 node_modules/
+*/node_modules
+*/dist

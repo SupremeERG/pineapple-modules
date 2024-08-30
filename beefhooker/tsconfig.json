@@ -19,11 +19,11 @@
             "dom"
         ],
         "paths": {
-            "customexfil": [
-                "dist/customexfil"
+            "beefhooker": [
+                "dist/beefhooker"
             ],
-            "customexfil/*": [
-                "dist/customexfil/*"
+            "beefhooker/*": [
+                "dist/beefhooker/*"
             ]
         }
     },

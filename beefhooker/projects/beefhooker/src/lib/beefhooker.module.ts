@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { customexfilComponent } from './components/customexfil.component';
+import { beefhookerComponent } from './components/beefhooker.component';
 import { RouterModule, Routes } from '@angular/router';
 
 import {MaterialModule} from './modules/material/material.module';
@@ -10,11 +10,11 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {FormsModule} from '@angular/forms';
 
 const routes: Routes = [
-    { path: '', component: customexfilComponent }
+    { path: '', component: beefhookerComponent }
 ];
 
 @NgModule({
-    declarations: [customexfilComponent],
+    declarations: [beefhookerComponent],
     imports: [
         CommonModule,
         RouterModule.forChild(routes),
@@ -22,6 +22,6 @@ const routes: Routes = [
         FlexLayoutModule,
         FormsModule,
     ],
-    exports: [customexfilComponent]
+    exports: [beefhookerComponent]
 })
-export class customexfilModule { }
+export class beefhookerModule { }

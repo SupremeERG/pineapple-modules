@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-title>Welcome to beefhooker</mat-card-title>
+    <mat-card-content>
+        
+        <!-- view docs: https://v9.material.angular.io/components/input/overview -->
+        
+        <div class="target-container">
+          <mat-label id="spoof_label">IP address or domain to perform dns spoof</mat-label>
+            <mat-form-field appearance="fill"> <!-- [floatLabel]="floatLabelControl.value"> -->
+              <input matInput placeholder="Ex. google.com">
+            </mat-form-field>
+            <br>
+            
+            <mat-form-field appearance="fill" [floatLabel]="floatLabelControl.value">
+                <mat-label>BeEF hook endpoint</mat-label>
+                <input matInput placeholder="Ex. https://14.10.236.51/beefHookHere">
+              </mat-form-field>
+        </div>
+
+        <button mat-flat-button color="accent" (click)="doAPIAction();">Request to module</button>
+        <span id="buttonres">response here</span>
+          
+    </mat-card-content>
+</mat-card>
